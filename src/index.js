@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from 'react-router-dom'
+
+// 由于 antd 组件的默认文案是英文，所以需要修改为中文
+import zhCN from 'antd/lib/locale/zh_CN';
+import {ConfigProvider} from 'antd'
+import 'moment/locale/zh-cn';
+// import 'antd/dist/antd.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ConfigProvider locale={zhCN}>
+        <App />
+      </ConfigProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,21 @@
+.nav {
+  position: fixed !important;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+  padding: 0 100px;
+}
+.nav .ant-menu {
+  border: 0;
+  color: #1d1d1f;
+}
+.nav .ant-space {
+  font-size: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.home {
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/BG.jpg") no-repeat center center;
+  background-size: cover;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home .sentence {
+  color: #f7c173;
+  position: absolute;
+  top: 0;
+  padding: 15px;
+}
+.home .author {
+  position: absolute;
+  bottom: 60px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.home .beian {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  padding: 15px;
+}
+.home .beian a {
+  color: #fff;
+}
