@@ -11,6 +11,10 @@ import {ConfigProvider} from 'antd'
 import 'moment/locale/zh-cn';
 // import 'antd/dist/antd.css';
 
+// 配置axios
+import axios from 'axios'
+axios.defaults.baseURL = "http://127.0.0.1:5000/api/"
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
