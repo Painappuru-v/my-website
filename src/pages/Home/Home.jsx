@@ -40,14 +40,14 @@ export default function Home() {
             </div>
             <div className='author'>
                 <Space size="large">   
-                    <Tooltip title="画师pixiv主页" color='#f7c173'>
+                    <Tooltip title="pixiv画师主页" color='#f7c173'>
                         <a href="https://www.pixiv.net/users/26225243" target="_blank" rel='noreferrer'>
-                            画师：粉帮老大
+                            粉帮老大
                         </a>
                     </Tooltip>
-                    <Tooltip title="背景插画pixiv作品页" color='#f7c173'>
+                    <Tooltip title="pixiv插画作品页" color='#f7c173'>
                         <a href="https://www.pixiv.net/artworks/84595361" target="_blank" rel='noreferrer'>
-                            插画详情
+                            No,Thank You
                         </a>
                     </Tooltip>
                 </Space>

@@ -1,6 +1,7 @@
 import './Blog.css'
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import dayjs from 'dayjs';
 import { Tooltip, message } from 'antd';
 import { createFromIconfontCN } from '@ant-design/icons';
 const IconFont = createFromIconfontCN({
@@ -14,7 +15,7 @@ export default function Blog() {
     useEffect(() => {
         axios.get('blog').then(
             response => {
-                console.log(response);
+                // console.log(response);
                 if(response.data.status !== 200) {
                     return message.error('出错了!');
                 }
@@ -29,14 +30,14 @@ export default function Blog() {
     return (
         <div className='blog'>
             <div className='author'>
-                <Tooltip title="画师pixiv主页" color='#f7c173' placement="right">
+                <Tooltip title="pixiv画师主页" color='#f7c173' placement="right">
                     <a href="https://www.pixiv.net/users/44473246" target="_blank" rel='noreferrer'>
-                        画师：Rune Xiao
+                        Rune Xiao
                     </a>
                 </Tooltip>
-                <Tooltip title="背景插画pixiv作品页" color='#f7c173' placement="right">
+                <Tooltip title="pixiv插画作品页" color='#f7c173' placement="right">
                     <a href="https://www.pixiv.net/artworks/88956309" target="_blank" rel='noreferrer'>
-                        插画详情
+                        引伴
                     </a>
                 </Tooltip>
             </div>
@@ -51,7 +52,7 @@ export default function Blog() {
                                 <a className='title' href={item.url} target='_blank' rel='noreferrer'>
                                     {item.title}
                                 </a>
-                                <div className='time'>{item.time}</div>
+                                <div className='time'>{dayjs(item.time).format('YYYY-MM-DD HH:mm')}</div>
                             </div>
                             <div className='icon'>
                                 <Tooltip title="csdn" color='#f7c173'>

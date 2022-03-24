@@ -1,0 +1,261 @@
+.illustration {
+  padding: 20px 10%;
+  position: relative;
+}
+.illustration .aside {
+  position: fixed;
+  left: 8%;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+.illustration .aside .ant-anchor-wrapper {
+  padding: 0;
+  margin: 0;
+}
+.illustration .aside .ant-anchor-wrapper .ant-anchor {
+  padding: 0;
+}
+.illustration .aside .ant-anchor-wrapper .ant-anchor .ant-anchor-ink {
+  display: none;
+}
+.illustration .aside .ant-anchor-wrapper .ant-anchor .ant-anchor-link {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.illustration .aside .ant-anchor-wrapper .ant-anchor .ant-anchor-link .ant-anchor-link-title {
+  letter-spacing: 0.05em;
+}
+.illustration .aside .ant-anchor-wrapper .ant-anchor .ant-anchor-link:hover {
+  background-color: #fcf7f2;
+  border-radius: 6px;
+}
+.illustration .container {
+  padding: 0 90px 0 120px;
+}
+.illustration .container .tip {
+  width: 100%;
+  padding: 10px;
+  border-left: 5px solid #f7c173;
+  background-color: #f6f6f6;
+  color: #999;
+  margin-bottom: 10px;
+  border-radius: 0 6px 6px 0;
+  letter-spacing: 0.05em;
+}
+.illustration .container img {
+  object-fit: cover;
+}
+.illustration .container .ant-image {
+  border-radius: 4px;
+}
+.illustration .container .ant-image img {
+  border-radius: 4px;
+}
+.illustration .container .ant-image .ant-image-mask {
+  border-radius: 4px;
+}
+.illustration .container .ant-anchor-wrapper {
+  padding: 0;
+  margin: 0;
+}
+.illustration .container .ant-anchor-wrapper .ant-anchor {
+  padding: 0;
+}
+.illustration .container .ant-anchor-wrapper .ant-anchor .ant-anchor-ink {
+  display: none;
+}
+.illustration .container .ant-anchor-wrapper .ant-anchor .ant-anchor-link {
+  padding: 10px 20px;
+  border-bottom: 1px solid #f7c173;
+  font-size: 18px;
+  color: #f7c173;
+}
+.illustration .container .ant-anchor-wrapper .ant-anchor .ant-anchor-link .ant-anchor-link-title {
+  color: #f7c173;
+  letter-spacing: 0.1em;
+}
+.illustration .container .ant-anchor-wrapper .ant-anchor .ant-anchor-link:hover::before {
+  content: '#';
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #f7c173;
+}
+.illustration .container #my-illustration .my-wrap {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.illustration .container #my-illustration .my-wrap .my-box {
+  width: 150px;
+  margin: 5px 8px 10px;
+}
+.illustration .container #my-illustration .my-wrap .my-box a {
+  display: block;
+  padding: 5px 2px;
+  color: #1d1d1d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.illustration .container #my-illustration .my-wrap .my-box a:hover {
+  color: #f7c173;
+}
+.illustration .container #artists .artists-wrap {
+  padding-top: 10px;
+}
+.illustration .container #artists .artists-wrap .artist-box {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #66c18c;
+}
+.illustration .container #artists .artists-wrap .artist-box .artist {
+  font-size: 18px;
+}
+.illustration .container #artists .artists-wrap .artist-box .artist span {
+  color: #f7c173;
+}
+.illustration .container #artists .artists-wrap .artist-box .artist p {
+  font-size: 14px;
+  color: #999;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+.illustration .container #subject .subject-wrap {
+  padding-top: 10px;
+}
+.illustration .container #subject .subject-wrap .subject-box {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #66c18c;
+}
+.illustration .container #subject .subject-wrap .subject-box .subject {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #f7c173;
+  letter-spacing: 0.05em;
+}
+.illustration .container .scroll-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.illustration .container .scroll-wrap .left-scroll {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 136px;
+  width: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.illustration .container .scroll-wrap .left-scroll .btn {
+  position: absolute;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+}
+.illustration .container .scroll-wrap .left-scroll:hover .btn {
+  color: #f7c173;
+}
+.illustration .container .scroll-wrap .right-scroll {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  height: 136px;
+  width: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.illustration .container .scroll-wrap .right-scroll .btn {
+  position: absolute;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+}
+.illustration .container .scroll-wrap .right-scroll:hover .btn {
+  color: #f7c173;
+}
+.illustration .container .scroll-wrap:hover .left-scroll,
+.illustration .container .scroll-wrap:hover .right-scroll {
+  opacity: 100%;
+}
+.illustration .container .scroll-wrap .scroll-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  position: relative;
+}
+.illustration .container .scroll-wrap .scroll-box .work-box {
+  width: 136px;
+  margin: 0 4px;
+}
+.illustration .container .scroll-wrap .scroll-box .work-box a {
+  display: block;
+  padding: 5px 2px;
+  color: #1d1d1d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.illustration .container .scroll-wrap .scroll-box .work-box a:hover {
+  color: #f7c173;
+}
+.illustration .container .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #66c18c;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #66c18c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.illustration .container .more .loadMore {
+  width: 100%;
+}
+.illustration .container .more .loadMore div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.illustration .container .more .loadMore div span {
+  transition: transform 1s;
+}
+.illustration .container .more .loadMore:hover span {
+  transform: rotate(360deg);
+}
+.illustration .container .more .moreLoading {
+  display: none;
+}
+.illustration .container .more .done {
+  display: none;
+}

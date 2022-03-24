@@ -12,7 +12,7 @@ export default function Nav() {
     const navigate = useNavigate();
     // 当前路由地址
     const {pathname} = useLocation();
-    console.log(pathname);
+    // console.log(pathname);
     // 当前选中的导航
     const [current, setCurrnet ] = useState(pathname)
     // 切换导航

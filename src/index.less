@@ -27,6 +27,8 @@ html, body, #root, .App {
   transform: none;
   
   .ant-back-top {
+    right: 50px;
+
     .top {
       width: 40px;
       height: 40px;
@@ -40,7 +42,7 @@ html, body, #root, .App {
       color: @Fcolor;
       text-align: center;
       font-size: 14px;
-      box-shadow: rgb(0 0 0 / 12%) 0px 0px 6px;
+      box-shadow: rgb(0 0 0 / 12%) 0px 0px 10px;
 
       &:hover {
         background-color: @hover;
@@ -51,19 +53,19 @@ html, body, #root, .App {
 
 // 自定义滚动条
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/ 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 9px;
   height: 9px
 }
 /*定义滚动条轨道*/ 
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background-color: transparent;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
   border-radius: 2em
 }
 /*定义滑块 内阴影+圆角*/ 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background-color: @Fcolor;
   // background-image: -webkit-linear-gradient(30deg, transparent 0%,transparent 50%,rgba(102,193,140,.4) 50%, rgba(255,255,255,1) 100%, transparent);
   background-image: linear-gradient(145deg, @Scolor, @Fcolor, @Fcolor );
