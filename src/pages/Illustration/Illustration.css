@@ -21,6 +21,8 @@
 .illustration .aside .ant-anchor-wrapper .ant-anchor .ant-anchor-link {
   padding: 10px 20px;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
 .illustration .aside .ant-anchor-wrapper .ant-anchor .ant-anchor-link .ant-anchor-link-title {
   letter-spacing: 0.05em;

@@ -59,11 +59,12 @@ export default function Illustration() {
                     setArtistLoading(false)
                     return message.error('出错了!');
                 }
-                // setArtists([...artists, ...response.data.data]);
-                setArtists([...artists, ...response.data.data])
-                setArtistCount(response.data.total);                                                                                                
+                setArtistCount(response.data.total);
                 setArtistNum(artistNum+1)
-                setArtistLoading(false)
+                setTimeout(() => {
+                    setArtists([...artists, ...response.data.data])
+                    setArtistLoading(false)
+                }, 500);
             },
             error => {
                 setArtistLoading(false)
@@ -115,11 +116,12 @@ export default function Illustration() {
                     setSubjectLoading(false)
                     return message.error('出错了!');
                 }
-                // setSubject([...subject, ...response.data.data]);
-                setSubject([...subject, ...response.data.data])
-                setSubjectCount(response.data.total);                                                                                                
+                setSubjectCount(response.data.total);
                 setSubjectNum(subjectNum+1)
-                setSubjectLoading(false)
+                setTimeout(() => {
+                    setSubject([...subject, ...response.data.data])
+                    setSubjectLoading(false)
+                }, 500);
             },
             error => {
                 setSubjectLoading(false)
@@ -193,7 +195,7 @@ export default function Illustration() {
             </div>
             {/* 展示区 */}
             <div className='container'>
-                <div className='tip'>转载请注明出处，这是对原创画师最基本的尊重。所有作品禁止未授权商用。</div>
+                <div className='tip'>转载请注明出处，这是对原创画师最基本的尊重。所有作品禁止未授权商用。有空就更新。</div>
                 {/* 我的插画 */}
                 <div id='my-illustration'>
                     {/* 锚点 */}
