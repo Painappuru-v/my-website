@@ -11,6 +11,9 @@
   position: relative;
   padding: 0 100px;
 }
+.nav .menu {
+  flex: 1;
+}
 .nav .ant-menu {
   border: 0;
   color: #1d1d1f;

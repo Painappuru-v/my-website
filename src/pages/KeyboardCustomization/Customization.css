@@ -1,0 +1,13 @@
+.customization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.customization img {
+  object-fit: cover;
+}
+.customization p {
+  margin-top: 20px;
+}

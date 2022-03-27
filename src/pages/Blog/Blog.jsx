@@ -5,7 +5,7 @@ import dayjs from 'dayjs';
 import { Tooltip, message } from 'antd';
 import { createFromIconfontCN } from '@ant-design/icons';
 const IconFont = createFromIconfontCN({
-    scriptUrl: '//at.alicdn.com/t/font_3248103_018w6xn45kyq9.js',
+    scriptUrl: '//at.alicdn.com/t/font_3248103_ss26rtu2kg7.js',
   });
 
 export default function Blog() {
@@ -30,14 +30,14 @@ export default function Blog() {
     return (
         <div className='blog'>
             <div className='author'>
-                <Tooltip title="pixiv画师主页" color='#f7c173' placement="right">
-                    <a href="https://www.pixiv.net/users/44473246" target="_blank" rel='noreferrer'>
-                        Rune Xiao
+                <Tooltip title="画师主页" color='#f7c173' placement="right">
+                    <a href="https://www.artstation.com/superdj" target="_blank" rel='noreferrer'>
+                        JAY KIM
                     </a>
                 </Tooltip>
-                <Tooltip title="pixiv插画作品页" color='#f7c173' placement="right">
-                    <a href="https://www.pixiv.net/artworks/88956309" target="_blank" rel='noreferrer'>
-                        引伴
+                <Tooltip title="插画作品页" color='#f7c173' placement="right">
+                    <a href="https://www.artstation.com/artwork/aYQR6R" target="_blank" rel='noreferrer'>
+                        Fishing Cats
                     </a>
                 </Tooltip>
             </div>

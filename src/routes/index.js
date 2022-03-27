@@ -11,6 +11,7 @@ const Home = lazy(() => import('../pages/Home/Home'))
 const Blog = lazy(() => import('../pages/Blog/Blog'))
 const Illustration = lazy(() => import('../pages/Illustration/Illustration'))
 const PCDIY = lazy(() => import('../pages/PCDIY/DIY'))
+const Garbage = lazy(() => import('../pages/Garbage/Garbage'))
 const Customization = lazy(() => import('../pages/KeyboardCustomization/Customization'))
 const PoemName = lazy(() => import('../pages/PoemName/PoemName'))
 
@@ -35,6 +36,10 @@ const routes = [
     {
         path: "/pc-diy",
         element: <PCDIY/>
+    }, 
+    {
+        path: "/pc-garbage",
+        element: <Garbage/>
     }, 
     {
         path: "/keyboard-customization",

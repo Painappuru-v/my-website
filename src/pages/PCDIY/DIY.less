@@ -81,9 +81,56 @@
                 }
             }
         }
+        
+        .anticon {
+            font-size: 16px;
+        }
+        
 
         .item {
-            height: 500px;
+            // height: 500px;
+            margin-bottom: 20px;
+
+            .desc {
+                margin: 10px 0 0;
+                padding: 0 20px;
+                word-wrap: break-word;
+                word-break: break-all;
+                letter-spacing: 0.05em;
+            }
+
+            .content-box {
+                padding: 10px 20px 0;
+                width: 100%;
+
+                .tip {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                    align-items: flex-start;
+
+                    div {
+                        margin-right: 1em;
+
+                    }
+ 
+                }
+
+                p {
+                    margin-bottom: 10px;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                    letter-spacing: 0.05em;
+                }
+
+                .ant-divider-inner-text {
+                    color: @Scolor;
+                }
+
+                .red {
+                    color: rgb(185, 56, 66);
+                }
+            }
         }
     }
 }

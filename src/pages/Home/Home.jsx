@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import {Space, Tooltip} from 'antd';
 import { createFromIconfontCN } from '@ant-design/icons';
 const IconFont = createFromIconfontCN({
-    scriptUrl: '//at.alicdn.com/t/font_3248103_018w6xn45kyq9.js',
+    scriptUrl: '//at.alicdn.com/t/font_3248103_ss26rtu2kg7.js',
 });
 const jinrishici = require('jinrishici');
 

@@ -6,7 +6,7 @@ import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import { createFromIconfontCN, SyncOutlined } from '@ant-design/icons';
 const { Link } = Anchor;
 const IconFont = createFromIconfontCN({
-    scriptUrl: '//at.alicdn.com/t/font_3248103_018w6xn45kyq9.js',
+    scriptUrl: '//at.alicdn.com/t/font_3248103_ss26rtu2kg7.js',
 });
 
 export default function Illustration() {
@@ -111,7 +111,7 @@ export default function Illustration() {
         axios.get('illustration/subject', {params: {subjectNum}}).then(
             response => {
                 // console.log(JSON.parse(response.data.data[0].list));
-                console.log(response.data);
+                // console.log(response.data);
                 if(response.data.status !== 200) {
                     setSubjectLoading(false)
                     return message.error('出错了!');
